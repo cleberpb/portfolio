@@ -310,6 +310,11 @@ footer .line-footer p i {
 footer .line-footer p a {
    color:#ffffff;
    text-decoration: none;
+   padding-left: 5px;
+}
+
+footer .line-footer p a:hover {
+    text-decoration: underline;
 }
 
 .borda {
