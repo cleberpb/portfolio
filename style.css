@@ -93,3 +93,19 @@ section.topo-do-site .flex { /*esta com problema*/
     color: #ffffff;
     margin: 40px 0;
 }
+
+/*IMAGEM DO TOPO DO SITE*/
+.topo-do-site .img-topo-do-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+    0% { /*estado inicial*/
+        top: 0px;
+    }
+    100% {
+        top: 30px;
+    }
+}
