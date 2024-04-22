@@ -90,7 +90,7 @@ header nav.menu-desktop ul li {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 99999;
     width: 0%;
     overflow: hidden;
     transition: .5s;
@@ -98,6 +98,10 @@ header nav.menu-desktop ul li {
 
 .menu-mobile.abrir-menu {
     width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu { /*dando erro*/
+    display: block;
 }
 
 .menu-mobile .btn-fechar {
@@ -380,6 +384,10 @@ footer .line-footer p a:hover {
     border-top: 2px solid #00ff08;
 }
 
+.btn-abrir-menu{
+    display: none;
+}
+
 /*RESPOSIVIDADE*/
 /*OBS: TUDO QUE NÃO FOR MODIFICADO NO @MEDIA, PODE SER APAGADOR, PARA O CODIGO NÃO FICAR MUITO GRANDE */
 @media screen and (max-width: 1020px){
@@ -467,4 +475,10 @@ footer .line-footer p a:hover {
     footer .line-footer {
         text-align: center;
     }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
 }
+
